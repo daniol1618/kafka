@@ -3,7 +3,7 @@
 
 
 
-# Instructions to Start a Kafka Cluster For testing Purposes
+# Instructions to Start a Kafka Cluster For topic1ing Purposes
 
 ## Instructions
 
@@ -30,7 +30,7 @@
 3. Execute the following command to create the topic:
 
 ```bash
-kafka-topics.bat --create --bootstrap-server localhost:9092 --topic test
+kafka-topics.bat --create --bootstrap-server localhost:9092 --topic topic1
 ```
 
 ### Creating a Producer Console
@@ -39,7 +39,7 @@ kafka-topics.bat --create --bootstrap-server localhost:9092 --topic test
 3. Execute the following command to initialize the producer
 
 ```bash
-kafka-console-producer.bat --broker-list localhost:9092 --topic test
+kafka-console-producer.bat --broker-list localhost:9092 --topic topic1
 ```
 
 ### Creating a Consumer Console
@@ -48,5 +48,5 @@ kafka-console-producer.bat --broker-list localhost:9092 --topic test
 3. Execute the following command to initialize the consumer
 
 ```bash
-kafka-console-consumer.bat --topic test --bootstrap-server localhost:9092 --from-beginning
+kafka-console-consumer.bat --topic topic1 --bootstrap-server localhost:9092 --from-beginning
 ```
